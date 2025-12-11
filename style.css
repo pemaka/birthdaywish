@@ -1,0 +1,424 @@
+/* Import Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+/* --- Global & Base Styles --- */
+:root {
+    --primary-color: #ff6b6b; /* Bright, attractive color */
+    --secondary-color: #48dbfb; /* Complementary color */
+    --text-color: #333;
+    --bg-light: #f4f7f6;
+    --card-bg: #fff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Login Page Styles --- */
+.login-body {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.login-container {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.login-container p {
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#bestieName {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#bestieName:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #ff4757; /* Slightly darker red */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.small-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+
+/* --- Main Page Styles --- */
+.main-body {
+    background-color: var(--bg-light);
+    padding: 20px;
+}
+
+.message-card {
+    background-color: var(--card-bg);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    max-width: 700px;
+    width: 95%;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-card h1 {
+    color: var(--primary-color);
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.wish-section {
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.modern-wish {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Attractive words list styling */
+.attractive-words {
+    background-color: #f0f8ff; /* Light blue background for emphasis */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.attractive-words h2 {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.attractive-words ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.attractive-words ul li {
+    background-color: var(--card-bg);
+    margin: 5px;
+    padding: 10px 15px;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+    font-weight: 600;
+    flex-basis: 45%; /* Two items per row on wider screens */
+    transition: transform 0.3s;
+}
+
+.attractive-words ul li:hover {
+    transform: translateY(-3px);
+}
+
+.footer-note {
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+.signature {
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .message-card {
+        padding: 30px 20px;
+    }
+
+    .message-card h1 {
+        font-size: 2.2em;
+    }
+
+    .attractive-words ul li {
+        flex-basis: 100%; /* One item per row on smaller screens */
+        margin-bottom: 10px;
+    }
+}
+/* Import Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+/* --- Global & Base Styles --- */
+:root {
+    --primary-color: #ff6b6b; /* Bright, attractive color */
+    --secondary-color: #48dbfb; /* Complementary color */
+    --text-color: #333;
+    --bg-light: #f4f7f6;
+    --card-bg: #fff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Login Page Styles --- */
+.login-body {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.login-container {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.login-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.login-container p {
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#bestieName {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#bestieName:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #ff4757; /* Slightly darker red */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.small-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+
+/* --- Main Page Styles --- */
+.main-body {
+    background-color: var(--bg-light);
+    padding: 20px;
+}
+
+.message-card {
+    background-color: var(--card-bg);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    max-width: 700px;
+    width: 95%;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-card h1 {
+    color: var(--primary-color);
+    font-size: 3em;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.wish-section {
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.modern-wish {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* Attractive words list styling */
+.attractive-words {
+    background-color: #f0f8ff; /* Light blue background for emphasis */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.attractive-words h2 {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.attractive-words ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.attractive-words ul li {
+    background-color: var(--card-bg);
+    margin: 5px;
+    padding: 10px 15px;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 5px;
+    font-weight: 600;
+    flex-basis: 45%; /* Two items per row on wider screens */
+    transition: transform 0.3s;
+}
+
+.attractive-words ul li:hover {
+    transform: translateY(-3px);
+}
+
+.footer-note {
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #555;
+}
+
+.signature {
+    margin-top: 25px;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .message-card {
+        padding: 30px 20px;
+    }
+
+    .message-card h1 {
+        font-size: 2.2em;
+    }
+
+    .attractive-words ul li {
+        flex-basis: 100%; /* One item per row on smaller screens */
+        margin-bottom: 10px;
+    }
+}
