@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Modern Wish for My Bestie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-body">
+    <div class="message-card">
+        <h1 id="greeting">Hey there!</h1>
+        <div class="wish-section">
+            <p class="modern-wish">
+                **Big energy and good vibes only!** 🌟 <br><br>
+                Just dropping this digital confetti to say you're doing amazing. Keep shining, keep leveling up, and never lose that incredible spark you have.
+            </p>
+
+            <div class="attractive-words">
+                <h2>Why you're the GOAT (Greatest of All Time):</h2>
+                <ul>
+                    <li>✨ **Authentic:** You keep it 100%, always.</li>
+                    <li>🧠 **Sharp:** Quick-witted and always on your game.</li>
+                    <li>🔥 **Resilient:** You turn setbacks into comebacks.</li>
+                    <li>💖 **Supportive:** The ultimate hype-person and a true friend.</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer-note">
+            Cheers to more unforgettable moments and conquering the next chapter together! You're a rare gem. 💎
+        </p>
+
+        <p class="signature">– Your Bestie</p>
+    </div>
+
+    <script>
+        // Get the name from sessionStorage (set in login.html)
+        const bestieName = sessionStorage.getItem('bestieName');
+        const greetingElement = document.getElementById('greeting');
+
+        if (bestieName) {
+            // Personalize the greeting
+            greetingElement.textContent = `Hey, ${bestieName}!`;
+        } else {
+            // Fallback if they access main.html directly
+            greetingElement.textContent = `Hey there, Bestie!`;
+        }
+    </script>
+</body>
+</html>
